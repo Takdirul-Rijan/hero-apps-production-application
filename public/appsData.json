@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80",
+    "title": "Forest: Focus For Productivity",
+    "companyName": "Forest App Studio",
+    "description": "Stay focused and grow a virtual tree while you work or study. A productivity timer that rewards focus.",
+    "size": "25MB",
+    "reviews": "9.5K",
+    "ratingAvg": 4.9,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 340 },
+      { "name": "4 star", "count": 980 },
+      { "name": "5 star", "count": 7830 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://plus.unsplash.com/premium_photo-1683749810514-860f96ad0735?q=80&w=1113&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "SmPlan: ToDo List With Reminder",
+    "companyName": "SmartPlanner Inc.",
+    "description": "Plan your day, track tasks, and set reminders effortlessly with SmPlan productivity app.",
+    "size": "18MB",
+    "reviews": "8.4K",
+    "ratingAvg": 4.8,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 410 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 6510 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?auto=format&fit=crop&w=600&q=80",
+    "title": "FLIP - Focus Timer For Study",
+    "companyName": "FLIP Studio",
+    "description": "An elegant study timer app that helps students stay concentrated and productive.",
+    "size": "22MB",
+    "reviews": "7.2K",
+    "ratingAvg": 4.7,
+    "downloads": "8M",
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 210 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 5100 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80",
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "Pomocat Labs",
+    "description": "A cute cat-themed Pomodoro timer app that keeps you motivated while studying or working.",
+    "size": "20MB",
+    "reviews": "8.8K",
+    "ratingAvg": 4.9,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 190 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 960 },
+      { "name": "5 star", "count": 7220 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?auto=format&fit=crop&w=600&q=80",
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "PlannerPro Studio",
+    "description": "Organize your life with an advanced scheduler and daily planner for personal or work tasks.",
+    "size": "30MB",
+    "reviews": "11.2K",
+    "ratingAvg": 4.8,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 320 },
+      { "name": "3 star", "count": 420 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 9150 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80",
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "Habitify Labs",
+    "description": "Build a better morning routine and form new habits with customizable daily reminders.",
+    "size": "27MB",
+    "reviews": "9.8K",
+    "ratingAvg": 4.9,
+    "downloads": "8M",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 1180 },
+      { "name": "5 star", "count": 7950 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1532614338840-ab30cf10ed36?auto=format&fit=crop&w=600&q=80",
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "GreenMind Studio",
+    "description": "A combination of Pomodoro timer and plant-growing gamification for better focus and motivation.",
+    "size": "23MB",
+    "reviews": "6.7K",
+    "ratingAvg": 4.7,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1020 },
+      { "name": "5 star", "count": 4880 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&w=600&q=80",
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "SleepWell Tech",
+    "description": "A smart alarm clock that challenges you to wake up with puzzles and motivational tasks.",
+    "size": "26MB",
+    "reviews": "12.5K",
+    "ratingAvg": 4.8,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 380 },
+      { "name": "4 star", "count": 1340 },
+      { "name": "5 star", "count": 10380 }
+    ]
+  }
+]

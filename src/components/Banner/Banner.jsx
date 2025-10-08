@@ -5,7 +5,7 @@ import heroImg from "../../assets/hero.png";
 
 const Banner = () => {
   return (
-    <div className="bg-[#D2D2D2]">
+    <div className="max-w-7xl mx-auto bg-base-400">
       <div className="max-w-7xl mx-auto py-10 px-4 text-center ">
         <h1 className="text-4xl md:text-6xl font-bold mt-4">
           We Build <br /> <span className="text-blue-700">Productive</span> Apps
@@ -54,19 +54,19 @@ const Banner = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <div className="text-white">
-              <p className="text-sm mb-2">Total Downloads</p>
+              <p className="text-xl mb-2">Total Downloads</p>
               <p className="text-4xl sm:text-5xl font-bold mb-2">29.6M</p>
               <p className="text-xs sm:text-sm">21% More Than Last Month</p>
             </div>
 
             <div className="text-white">
-              <p className="text-sm mb-2">Total Reviews</p>
+              <p className="text-xl mb-2">Total Reviews</p>
               <p className="text-4xl sm:text-5xl font-bold mb-2">906K</p>
               <p className="text-xs sm:text-sm">46% More Than Last Month</p>
             </div>
 
             <div className="text-white">
-              <p className="text-sm mb-2">Active Apps</p>
+              <p className="text-xl mb-2">Active Apps</p>
               <p className="text-4xl sm:text-5xl font-bold mb-2">132+</p>
               <p className="text-xs sm:text-sm">31 More Will Launch</p>
             </div>

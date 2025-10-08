@@ -13,13 +13,13 @@ const Navbar = () => {
       <div className="navbar-center">
         <ul className="menu flex-col items-center justify-center gap-2 lg:menu-horizontal lg:gap-5">
           <li>
-            <a className="text-[16px] font-normal">Homes</a>
+            <a className="text-[16px] font-semibold">Homes</a>
           </li>
           <li>
-            <a className="text-[16px] font-normal">Apps</a>
+            <a className="text-[16px] font-semibold">Apps</a>
           </li>
           <li>
-            <a className="text-[16px] font-normal">Installation</a>
+            <a className="text-[16px] font-semibold">Installation</a>
           </li>
         </ul>
       </div>
