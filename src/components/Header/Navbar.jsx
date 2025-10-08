@@ -25,14 +25,19 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <div className="flex items-center btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">
+        <a
+          href="https://github.com/Takdirul-Rijan"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"
+        >
           <img
             className="h-[30px] w-[30px] rounded-full"
             src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
             alt=""
           />
-          <a className="text-[16px] font-[600] text-white">Contribute</a>
-        </div>
+          <span className="text-[16px] font-[600] text-white">Contribute</span>
+        </a>
       </div>
     </div>
   );
