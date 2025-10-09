@@ -6,12 +6,20 @@ import SpinnerLoading from "../../components/SpinnerLoading/SpinnerLoading";
 const AllApps = () => {
   const data = useLoaderData();
   const [search, setSearch] = useState("");
+  const [searchLoading, setSearchLoading] = useState(false);
+  const [cardLoading, setCardLoading] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleCardClick = (id) => {
+    setCardLoading(true);
+    navigate(`/appdetails/${id}`);
+    setTimeout(() => setCardLoading(false), 500);
+  };
 
   const filteredApps = data.filter((app) =>
     app.title.toLowerCase().includes(search.toLowerCase())
   );
-
-  const [searchLoading, setSearchLoading] = useState(false);
 
   useEffect(() => {
     if (!search) {
@@ -20,17 +28,22 @@ const AllApps = () => {
     }
     setSearchLoading(true);
     setTimeout(() => setSearchLoading(false), 400);
-    return;
   }, [search]);
 
-  const navigate = useNavigate();
-
-  const handleCardClick = (id) => {
-    navigate(`/appdetails/${id}`);
-  };
-
   return (
-    <div className="max-w-7xl mx-auto bg-base-400">
+    <div className="max-w-7xl mx-auto bg-base-400 relative">
+      {cardLoading && (
+        <div className="fixed inset-0 flex justify-center items-center bg-white/50 z-50">
+          <SpinnerLoading></SpinnerLoading>
+        </div>
+      )}
+
+      {searchLoading && (
+        <div className="fixed inset-0 flex justify-center items-center bg-white/50 z-50">
+          <SpinnerLoading></SpinnerLoading>
+        </div>
+      )}
+
       <h1 className="text-3xl font-bold mt-4 mb-1 text-center">
         Our Applications
       </h1>
@@ -50,11 +63,6 @@ const AllApps = () => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          {searchLoading && (
-            <div className="fixed inset-0 flex justify-center items-center bg-white/50 z-50">
-              <SpinnerLoading />
-            </div>
-          )}
         </div>
       </div>
 
@@ -65,7 +73,7 @@ const AllApps = () => {
           {filteredApps.map((app) => (
             <div
               key={app.id}
-              className="bg-[#d9d9d9] rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-5 flex flex-col items-center text-center"
+              className="bg-[#d9d9d9] rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-5 flex flex-col items-center text-center cursor-pointer"
               onClick={() => handleCardClick(app.id)}
             >
               <img
@@ -77,11 +85,10 @@ const AllApps = () => {
 
               <div className="flex justify-between items-center w-full gap-2 text-sm text-gray-600 mt-auto">
                 <span className="flex gap-1 bg-[#f1f5e8] p-1 rounded-sm">
-                  <Download className="text-green-600"></Download>{" "}
-                  {app.downloads}
+                  <Download className="text-green-600" /> {app.downloads}
                 </span>
                 <span className="flex gap-1 bg-[#f1f5e8] p-1 rounded-sm">
-                  <Star className="text-yellow-600"></Star> {app.ratingAvg}
+                  <Star className="text-yellow-600" /> {app.ratingAvg}
                 </span>
               </div>
             </div>

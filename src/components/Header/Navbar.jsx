@@ -47,7 +47,16 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <a className="text-[16px] font-semibold">Installation</a>
+            <NavLink
+              to={"/myinstallation"}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-[16px] font-semibold border-b-2 border-blue-700"
+                  : "text-[16px] font-semibold"
+              }
+            >
+              Installation
+            </NavLink>
           </li>
         </ul>
       </div>
