@@ -5,6 +5,12 @@ import { useNavigate } from "react-router";
 const TrendingApps = ({ data }) => {
   const showAllBtnNavigate = useNavigate();
 
+  const navigate = useNavigate();
+
+  const handleCardClick = (id) => {
+    navigate(`/appdetails/${id}`);
+  };
+
   return (
     <div className="max-w-7xl mx-auto bg-base-400">
       <h1 className="text-3xl font-bold mt-4 mb-1 text-center">
@@ -19,6 +25,7 @@ const TrendingApps = ({ data }) => {
           <div
             key={app.id}
             className="bg-[#d9d9d9] rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-5 flex flex-col items-center text-center"
+            onClick={() => handleCardClick(app.id)}
           >
             <img
               src={app.image}
@@ -29,11 +36,11 @@ const TrendingApps = ({ data }) => {
 
             <div className="flex justify-between items-center w-full gap-2 text-sm text-gray-600">
               <span className="flex gap-1 bg-[#f1f5e8] p-1 rounded-sm">
-                <Download></Download>
+                <Download className="text-green-600"></Download>
                 {app.downloads}
               </span>
               <span className="flex gap-1 bg-[#f1f5e8] p-1 rounded-sm">
-                <Star></Star> {app.ratingAvg}
+                <Star className="text-yellow-600"></Star> {app.ratingAvg}
               </span>
             </div>
           </div>

@@ -77,10 +77,11 @@ const AllApps = () => {
 
               <div className="flex justify-between items-center w-full gap-2 text-sm text-gray-600 mt-auto">
                 <span className="flex gap-1 bg-[#f1f5e8] p-1 rounded-sm">
-                  <Download /> {app.downloads}
+                  <Download className="text-green-600"></Download>{" "}
+                  {app.downloads}
                 </span>
                 <span className="flex gap-1 bg-[#f1f5e8] p-1 rounded-sm">
-                  <Star /> {app.ratingAvg}
+                  <Star className="text-yellow-600"></Star> {app.ratingAvg}
                 </span>
               </div>
             </div>
