@@ -19,7 +19,7 @@ const ErrorPage = () => {
         </p>
         <button
           onClick={handleGoBack}
-          className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-900 transition"
+          className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-[16px] font-[600] text-white hover:bg-blue-900 transition"
         >
           Go Back
         </button>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import { Download, Star, ThumbsUp } from "lucide-react";
 import { toast, ToastContainer } from "react-toastify";
@@ -16,14 +16,25 @@ const AppDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
 
+  const app = data.find((item) => String(item.id) === String(id));
+
   const [install, setInstall] = useState(false);
 
+  useEffect(() => {
+    const installedApps =
+      JSON.parse(localStorage.getItem("installedApps")) || [];
+    const alreadyInstalled = installedApps.find((a) => a.id === app.id);
+    if (alreadyInstalled) setInstall(true);
+  }, [app.id]);
+
   const handleInstall = () => {
+    const installedApps =
+      JSON.parse(localStorage.getItem("installedApps")) || [];
+    installedApps.push(app);
+    localStorage.setItem("installedApps", JSON.stringify(installedApps));
     setInstall(true);
     toast.success("App installed successfully!");
   };
-
-  const app = data.find((item) => String(item.id) === String(id));
 
   return (
     <div className="max-w-5xl mx-auto mt-10 p-5">
@@ -66,9 +77,11 @@ const AppDetails = () => {
             disabled={install}
             className="mt-5 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-lg w-fit"
           >
-            {install
-              ? "Installed"
-              : `Install Now ${app.size ? `(${app.size})` : ""}`}
+            {install ? (
+              <p className="cursor-not-allowed">Installed</p>
+            ) : (
+              `Install Now ${app.size ? `(${app.size})` : ""}`
+            )}
           </button>
 
           <ToastContainer />
