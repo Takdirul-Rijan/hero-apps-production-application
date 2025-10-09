@@ -7,9 +7,17 @@ const Navbar = () => {
     <div className="navbar max-w-7xl mx-auto bg-base-100 shadow-sm">
       <div className="navbar-start flex items-center">
         <img className="h-[40px] w-[40px]" src={logoImg} alt="" />
-        <a className="btn btn-ghost text-xl font-bold text-blue-700 px-2">
+
+        <NavLink
+          to={"/"}
+          className={({ isActive }) =>
+            isActive
+              ? "btn btn-ghost text-xl font-bold text-blue-700 px-2"
+              : "btn btn-ghost text-xl font-bold text-blue-700 px-2"
+          }
+        >
           HERO.IO
-        </a>
+        </NavLink>
       </div>
 
       <div className="navbar-center">

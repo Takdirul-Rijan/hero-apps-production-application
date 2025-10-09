@@ -16,7 +16,7 @@ const Banner = () => {
           ideas into digital experiences that truly make an impact.
         </p>
 
-        <div className="flex justify-center gap-3 mt-2">
+        <div className="flex justify-center gap-3 mt-4">
           <div className="flex btn hover:bg-blue-700 rounded-lg shadow-xl transition duration-300">
             <img src={playStoreImg} alt="" />
             <a

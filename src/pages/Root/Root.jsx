@@ -8,9 +8,9 @@ const Root = () => {
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Navbar></Navbar>
-      <div>
+      <div className="flex-1 flex justify-center items-center">
         {isLoading ? <SpinnerLoading></SpinnerLoading> : <Outlet></Outlet>}
       </div>
       <Footer></Footer>

@@ -1,6 +1,6 @@
 import { Download, Star } from "lucide-react";
 import React, { useState, useEffect } from "react";
-import { useLoaderData } from "react-router";
+import { useLoaderData, useNavigate } from "react-router";
 import SpinnerLoading from "../../components/SpinnerLoading/SpinnerLoading";
 
 const AllApps = () => {
@@ -22,6 +22,12 @@ const AllApps = () => {
     setTimeout(() => setSearchLoading(false), 400);
     return;
   }, [search]);
+
+  const navigate = useNavigate();
+
+  const handleCardClick = (id) => {
+    navigate(`/appdetails/${id}`);
+  };
 
   return (
     <div className="max-w-7xl mx-auto bg-base-400">
@@ -60,6 +66,7 @@ const AllApps = () => {
             <div
               key={app.id}
               className="bg-[#d9d9d9] rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-5 flex flex-col items-center text-center"
+              onClick={() => handleCardClick(app.id)}
             >
               <img
                 src={app.image}
